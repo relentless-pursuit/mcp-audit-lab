@@ -14,16 +14,7 @@ The intended user is a developer, security reviewer or platform engineer who has
 
 The project uses one audit workflow agent. Docker preparation, static scanning, MCP probing and evidence verification are tools used by that agent; they are not separate agents.
 
-```mermaid
-flowchart LR
-    A[Public repository and pinned version] --> B[Quarantine preparation]
-    B --> C[Static capability inventory]
-    C --> D[No-network Docker sandbox]
-    D --> E[MCP initialize and tools/list]
-    E --> F[Safe synthetic tool calls]
-    F --> G[Runtime evidence verifier]
-    G --> H[Markdown and JSON audit report]
-```
+![MCP Audit Lab architecture](docs/architecture.svg)
 
 The workflow:
 

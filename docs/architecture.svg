@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="250" viewBox="0 0 1280 250" role="img" aria-labelledby="title desc">
+  <title id="title">MCP Audit Lab architecture</title>
+  <desc id="desc">A workflow from a pinned public repository through quarantine, static inventory, Docker sandbox, MCP probing, evidence verification and an audit report.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#93c5fd"/>
+    </marker>
+    <style>
+      .box { fill:#1f2937; stroke:#60a5fa; stroke-width:2; rx:12; }
+      .label { fill:#f8fafc; font:600 14px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; text-anchor:middle; }
+      .arrow { stroke:#93c5fd; stroke-width:2.5; marker-end:url(#arrow); }
+    </style>
+  </defs>
+  <rect width="1280" height="250" fill="#111827" rx="16"/>
+  <g transform="translate(20 70)">
+    <rect class="box" width="135" height="100"/>
+    <text class="label" x="67.5" y="34"><tspan x="67.5">Public repo</tspan><tspan x="67.5" dy="20">+ pinned version</tspan></text>
+  </g>
+  <g transform="translate(175 70)">
+    <rect class="box" width="135" height="100"/>
+    <text class="label" x="67.5" y="44"><tspan x="67.5">Quarantine</tspan><tspan x="67.5" dy="20">preparation</tspan></text>
+  </g>
+  <g transform="translate(330 70)">
+    <rect class="box" width="135" height="100"/>
+    <text class="label" x="67.5" y="34"><tspan x="67.5">Static</tspan><tspan x="67.5" dy="20">capability</tspan><tspan x="67.5" dy="20">inventory</tspan></text>
+  </g>
+  <g transform="translate(485 70)">
+    <rect class="box" width="135" height="100"/>
+    <text class="label" x="67.5" y="34"><tspan x="67.5">No-network</tspan><tspan x="67.5" dy="20">Docker</tspan><tspan x="67.5" dy="20">sandbox</tspan></text>
+  </g>
+  <g transform="translate(640 70)">
+    <rect class="box" width="135" height="100"/>
+    <text class="label" x="67.5" y="34"><tspan x="67.5">MCP initialize</tspan><tspan x="67.5" dy="20">and tools/list</tspan></text>
+  </g>
+  <g transform="translate(795 70)">
+    <rect class="box" width="135" height="100"/>
+    <text class="label" x="67.5" y="34"><tspan x="67.5">Safe synthetic</tspan><tspan x="67.5" dy="20">tool calls</tspan></text>
+  </g>
+  <g transform="translate(950 70)">
+    <rect class="box" width="135" height="100"/>
+    <text class="label" x="67.5" y="34"><tspan x="67.5">Runtime</tspan><tspan x="67.5" dy="20">evidence</tspan><tspan x="67.5" dy="20">verifier</tspan></text>
+  </g>
+  <g transform="translate(1105 70)">
+    <rect class="box" width="155" height="100"/>
+    <text class="label" x="77.5" y="34"><tspan x="77.5">Markdown + JSON</tspan><tspan x="77.5" dy="20">audit report</tspan></text>
+  </g>
+  <path class="arrow" d="M155 120 H170"/><path class="arrow" d="M310 120 H325"/>
+  <path class="arrow" d="M465 120 H480"/><path class="arrow" d="M620 120 H635"/>
+  <path class="arrow" d="M775 120 H790"/><path class="arrow" d="M930 120 H945"/>
+  <path class="arrow" d="M1085 120 H1100"/>
+</svg>
