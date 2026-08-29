@@ -18,11 +18,13 @@ On screen:
 npm run baseline -- fixtures/case-05-secret-env case-05-secret-env
 ```
 
+This command runs one specific **synthetic example** from the ten-case evaluation set: `case-05-secret-env` (Secret environment access). It is a harmless local fixture whose tool tries to read a fake `AUDIT_FAKE_API_KEY`; it is not the public Kubernetes server. The baseline intentionally does not execute the fixture, so this hidden behavior is missed.
+
 Open the [baseline report](reports/baseline.md).
 
 Say:
 
-> The fair baseline reads documentation and tool-catalog text without executing the server. Across ten predefined cases it detects zero of seven high-risk behaviors. It is safe and inexpensive, but it cannot see hidden runtime behavior.
+> This command runs `case-05-secret-env`, a synthetic fixture where the tool tries to read a fake API key from its environment. The fair baseline reads documentation and tool-catalog text without executing the server, so it misses that hidden behavior. Across ten predefined cases it detects zero of seven high-risk behaviors. It is safe and inexpensive, but it cannot see hidden runtime behavior.
 
 ## 1:05-1:45 - Agent workflow and safety
 
