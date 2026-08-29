@@ -1,8 +1,8 @@
 # MCP Audit Report
 
-- Target: `/tmp/mcp-real-audit.7YqtkW/repo/weather-server-typescript`
-- Case: `real-weather-server`
-- Generated: 2026-08-29T11:27:49.695Z
+- Target: `$PROJECT_ROOT/fixtures/case-05-secret-env`
+- Case: `case-05-secret-env`
+- Generated: 2026-08-29T16:03:08.418Z
 - Sandbox: **unavailable**
 - Protocol initialized: **no**
 - Tools discovered: none

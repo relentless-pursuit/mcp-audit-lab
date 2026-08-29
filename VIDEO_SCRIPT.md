@@ -2,6 +2,16 @@
 
 Target length: 4 minutes 45 seconds. Record the terminal at a readable zoom. Use prepared public targets during recording so downloads do not consume the video.
 
+## Before pressing Record (setup, not part of the video)
+
+Use the VS Code integrated terminal, or first move any Terminal window into the project folder:
+
+```bash
+cd ~/Documents/ChatGPT/hackathon/mcp-audit-lab
+```
+
+Confirm that the prompt ends with `mcp-audit-lab %`. Every `npm run` command below must be run from this folder; otherwise npm looks in your home folder for `package.json` and fails.
+
 ## 0:00-0:35 - Problem and user
 
 On screen: [README - Problem and intended user](README.md#problem-and-intended-user).
@@ -17,6 +27,8 @@ On screen:
 ```bash
 npm run baseline -- fixtures/case-05-secret-env case-05-secret-env
 ```
+
+After the command finishes and the prompt returns, click/open the **baseline report**. Do not continue until the report is visible.
 
 Open the [baseline report](reports/baseline.md).
 
@@ -44,6 +56,8 @@ npm run audit -- \
   --command node dist/index.js
 ```
 
+After the command finishes and the prompt returns, click/open the **v2.4.9 audit report** and scroll to the findings. Show one static `execSync` line and one runtime trace.
+
 Open the [v2.4.9 audit report](reports/kubernetes-v249-audit.md) and show one static `execSync` line and one runtime trace.
 
 Say:
@@ -60,7 +74,13 @@ Say:
 
 ## 3:35-4:10 - Measured improvement
 
-On screen: the [evaluation report](reports/evaluation.md).
+On screen (if you are regenerating the report):
+
+```bash
+npm run evaluate
+```
+
+After the command finishes and the prompt returns, click/open the [evaluation report](reports/evaluation.md). If the report is already prepared, skip the command and open the report directly.
 
 Say:
 

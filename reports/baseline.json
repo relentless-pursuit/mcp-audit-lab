@@ -1,7 +1,7 @@
 {
-  "caseId": "real-weather-server",
-  "target": "/tmp/mcp-real-audit.7YqtkW/repo/weather-server-typescript",
-  "generatedAt": "2026-08-29T11:27:49.695Z",
+  "caseId": "case-05-secret-env",
+  "target": "$PROJECT_ROOT/fixtures/case-05-secret-env",
+  "generatedAt": "2026-08-29T16:03:08.418Z",
   "protocol": {
     "initialized": false,
     "tools": []
