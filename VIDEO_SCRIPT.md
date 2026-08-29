@@ -4,7 +4,7 @@ Target length: 4 minutes 45 seconds. Record the terminal at a readable zoom. Use
 
 ## 0:00-0:35 - Problem and user
 
-On screen: README title and “Problem and intended user.”
+On screen: [README - Problem and intended user](README.md#problem-and-intended-user).
 
 Say:
 
@@ -18,7 +18,7 @@ On screen:
 npm run baseline -- fixtures/case-05-secret-env case-05-secret-env
 ```
 
-Open `reports/baseline.md`.
+Open the [baseline report](reports/baseline.md).
 
 Say:
 
@@ -26,7 +26,7 @@ Say:
 
 ## 1:05-1:45 - Agent workflow and safety
 
-On screen: README architecture diagram, then the Docker command in a JSON report.
+On screen: [README architecture diagram](README.md#what-the-audit-agent-does), then the Docker command in a JSON report.
 
 Say:
 
@@ -44,7 +44,7 @@ npm run audit -- \
   --command node dist/index.js
 ```
 
-Open `reports/kubernetes-v249-audit.md` and show one static `execSync` line and one runtime trace.
+Open the [v2.4.9 audit report](reports/kubernetes-v249-audit.md) and show one static `execSync` line and one runtime trace.
 
 Say:
 
@@ -52,7 +52,7 @@ Say:
 
 ## 2:50-3:35 - Patched comparison
 
-Open `reports/kubernetes-version-comparison.md`, then the v2.5.0 runtime evidence.
+Open the [vulnerable/patched comparison](reports/kubernetes-version-comparison.md), then the [v2.5.0 audit report](reports/kubernetes-v250-audit.md) for runtime evidence.
 
 Say:
 
@@ -60,7 +60,7 @@ Say:
 
 ## 3:35-4:10 - Measured improvement
 
-On screen: `reports/evaluation.md`.
+On screen: the [evaluation report](reports/evaluation.md).
 
 Say:
 
@@ -68,7 +68,7 @@ Say:
 
 ## 4:10-4:40 - Changelog and learning
 
-On screen: `CHANGELOG.md` rows for runtime refinement and removed experiment.
+On screen: the [improvement changelog](CHANGELOG.md), showing the runtime refinement and removed experiment rows.
 
 Say:
 
@@ -76,7 +76,7 @@ Say:
 
 ## 4:40-4:55 - Hot take and close
 
-On screen: README hot take and report links.
+On screen: the [README hot take](README.md#hot-take) and report links.
 
 Say:
 
