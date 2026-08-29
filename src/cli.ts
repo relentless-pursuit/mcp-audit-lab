@@ -23,7 +23,7 @@ if (command === "evaluate") {
   const repository = argv[1];
   const ref = argv[2] && !argv[2].startsWith("--") ? argv[2] : "main";
   if (!repository) {
-    console.error("Usage: npm run prepare -- https://github.com/OWNER/REPO.git [ref] [quarantine-directory]");
+    console.error("Usage: npm run prepare-repo -- https://github.com/OWNER/REPO.git [ref] [quarantine-directory]");
     process.exit(2);
   }
   const destination = argv[3] && !argv[3].startsWith("--") ? argv[3] : await mkdtemp(`${tmpdir()}/mcp-quarantine-`);

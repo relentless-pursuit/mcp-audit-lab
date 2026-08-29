@@ -103,7 +103,7 @@ See [REPRODUCTION.md](REPRODUCTION.md) for clean-environment setup and the exact
 Do not clone or install an untrusted MCP repository directly on the host. The preparation command accepts only HTTPS GitHub URLs and performs acquisition in disposable Docker containers:
 
 ```bash
-npm run prepare -- https://github.com/OWNER/REPOSITORY.git TAG_OR_COMMIT /tmp/mcp-quarantine-example
+npm run prepare-repo -- https://github.com/OWNER/REPOSITORY.git TAG_OR_COMMIT /tmp/mcp-quarantine-example
 ```
 
 Network is enabled only during clone and dependency download. npm lifecycle scripts are disabled. The build has no network. Failed preparation directories are retained for inspection and must be removed only by explicitly naming the disposable directory.

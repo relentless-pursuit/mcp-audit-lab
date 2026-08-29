@@ -58,7 +58,7 @@ The following directories must not already exist. They contain only disposable p
 Prepare the documented vulnerable version:
 
 ```bash
-npm run prepare -- \
+npm run prepare-repo -- \
   https://github.com/Flux159/mcp-server-kubernetes.git \
   v2.4.9 \
   /tmp/mcp-audit-repro-v249
@@ -67,7 +67,7 @@ npm run prepare -- \
 Prepare the patched version:
 
 ```bash
-npm run prepare -- \
+npm run prepare-repo -- \
   https://github.com/Flux159/mcp-server-kubernetes.git \
   v2.5.0 \
   /tmp/mcp-audit-repro-v250

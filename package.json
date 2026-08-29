@@ -9,7 +9,7 @@
     "audit": "tsx src/cli.ts audit",
     "baseline": "tsx src/cli.ts baseline",
     "evaluate": "tsx src/cli.ts evaluate",
-    "prepare": "tsx src/cli.ts prepare",
+    "prepare-repo": "tsx src/cli.ts prepare",
     "test": "npm run build && node --test dist/src/test/*.test.js"
   },
   "engines": { "node": ">=20" },
