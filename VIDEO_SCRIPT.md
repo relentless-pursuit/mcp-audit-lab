@@ -24,7 +24,7 @@ Open the [baseline report](reports/baseline.md).
 
 Say:
 
-> This command runs `case-05-secret-env`, a synthetic fixture where the tool tries to read a fake API key from its environment. The fair baseline reads documentation and tool-catalog text without executing the server, so it misses that hidden behavior. Across ten predefined cases it detects zero of seven high-risk behaviors. It is safe and inexpensive, but it cannot see hidden runtime behavior.
+> The fair baseline reads documentation and tool-catalog text without executing the server, so it misses the hidden environment access in this example. Across ten predefined cases it detects zero of seven high-risk behaviors. It is safe and inexpensive, but it cannot see hidden runtime behavior.
 
 ## 1:05-1:45 - Agent workflow and safety
 
