@@ -151,3 +151,5 @@ The probe uses synthetic example arguments and cannot reach every input-dependen
 The MCP Audit Lab implementation and its synthetic fixtures were created for this hackathon. The public weather and Kubernetes MCP repositories are external audit targets and are not redistributed as project source. The project uses Node.js, npm and Docker according to their respective licenses and terms.
 
 The official event page is the [micro1 Frontier Engineering Challenge 2026](https://www.hackerearth.com/community/challenges/hackathon/micro1-frontier-engineering-challenge-2026/).
+
+Source repository: https://github.com/relentless-pursuit/mcp-audit-lab

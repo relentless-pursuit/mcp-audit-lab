@@ -65,7 +65,7 @@ This checklist follows the official hackathon PDF. Items marked “submission ac
 - [x] Exact local setup, baseline, evaluation, preparation and audit commands are documented.
 - [x] Recorded versions, data requirements, expected outputs, approximate runtime and cost are documented.
 - [x] Repository tags and commits are pinned in comparison evidence.
-- [ ] Publish the complete repository and replace any submission-form repository placeholder with its URL: `________________`. **Submission action.**
+- [x] Complete repository published at https://github.com/relentless-pursuit/mcp-audit-lab.
 - [ ] Test the published repository once from a clean clone. **Submission action.**
 
 ### Hot Take / Insights - 5 points

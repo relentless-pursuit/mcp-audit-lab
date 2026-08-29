@@ -18,6 +18,7 @@ No API key, Kubernetes credential, kubeconfig or paid service is required. The m
 After downloading or cloning the submission, open the project directory:
 
 ```bash
+git clone https://github.com/relentless-pursuit/mcp-audit-lab.git
 cd mcp-audit-lab
 npm ci
 npm test
