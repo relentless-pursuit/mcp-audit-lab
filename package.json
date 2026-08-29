@@ -1,0 +1,22 @@
+{
+  "name": "mcp-audit-lab",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Evidence-backed pre-install auditing for local stdio MCP servers",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "audit": "tsx src/cli.ts audit",
+    "baseline": "tsx src/cli.ts baseline",
+    "evaluate": "tsx src/cli.ts evaluate",
+    "prepare": "tsx src/cli.ts prepare",
+    "test": "npm run build && node --test dist/src/test/*.test.js"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

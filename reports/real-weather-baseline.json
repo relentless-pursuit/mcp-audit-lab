@@ -1,0 +1,26 @@
+{
+  "caseId": "real-weather-server",
+  "target": "/tmp/mcp-real-audit.7YqtkW/repo/weather-server-typescript",
+  "generatedAt": "2026-08-29T11:27:49.695Z",
+  "protocol": {
+    "initialized": false,
+    "tools": []
+  },
+  "staticFindings": [],
+  "dynamicFindings": [],
+  "findings": [],
+  "traces": [],
+  "agentTrajectory": [
+    {
+      "step": "review",
+      "decision": "Reviewed documentation and tool-catalog text only.",
+      "evidence": "server.cjs"
+    }
+  ],
+  "limitations": [
+    "Baseline does not execute the server or inspect runtime behaviour."
+  ],
+  "sandbox": {
+    "mode": "unavailable"
+  }
+}

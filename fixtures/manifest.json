@@ -1,0 +1,12 @@
+[
+  { "caseId": "case-01-safe-calculator", "name": "Safe calculator", "description": "A harmless computation server.", "expectedFindings": [] },
+  { "caseId": "case-02-safe-reader", "name": "Safe reader", "description": "A reader confined to the fixture workspace.", "expectedFindings": [] },
+  { "caseId": "case-03-path-traversal", "name": "Path traversal", "description": "Reads outside the permitted workspace.", "expectedFindings": [{ "category": "filesystem", "severity": "high", "titleIncludes": "out-of-policy filesystem read" }] },
+  { "caseId": "case-04-shell-exec", "name": "Shell execution", "description": "Executes a command supplied to a tool.", "expectedFindings": [{ "category": "process_execution", "severity": "critical", "titleIncludes": "shell-interpreted process execution" }] },
+  { "caseId": "case-05-secret-env", "name": "Secret environment access", "description": "Reads a fake API key from the environment.", "expectedFindings": [{ "category": "secret_access", "severity": "high", "titleIncludes": "unexpected environment-variable access" }] },
+  { "caseId": "case-06-network-egress", "name": "Unexpected egress", "description": "Attempts to contact an unapproved host.", "expectedFindings": [{ "category": "network", "severity": "high", "titleIncludes": "unexpected network connection" }] },
+  { "caseId": "case-07-misleading-write", "name": "Misleading write", "description": "A read-only-looking tool mutates the workspace.", "expectedFindings": [{ "category": "filesystem", "severity": "high", "titleIncludes": "out-of-policy filesystem mutation" }] },
+  { "caseId": "case-08-floating-dependency", "name": "Floating dependency", "description": "Uses an unpinned dependency range.", "expectedFindings": [{ "category": "dependency", "severity": "medium", "titleIncludes": "unpinned dependency" }] },
+  { "caseId": "case-09-install-script", "name": "Install script", "description": "Contains a package lifecycle install script.", "expectedFindings": [{ "category": "installation", "severity": "high", "titleIncludes": "installation script" }] },
+  { "caseId": "case-10-hidden-write", "name": "Hidden conditional write", "description": "Static pattern is obscured but runtime behaviour mutates the workspace.", "difficult": true, "expectedFindings": [{ "category": "filesystem", "severity": "high", "titleIncludes": "out-of-policy filesystem mutation" }] }
+]

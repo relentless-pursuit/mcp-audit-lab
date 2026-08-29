@@ -1,0 +1,1 @@
+This is a harmless fixture file used by the sandbox probe.
